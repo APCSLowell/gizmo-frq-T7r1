@@ -24,10 +24,11 @@ return c;
   */
   public boolean hasAdjacentEqualPair()
   {
-for(int i=0; i<purchases.size();i++)
+for(int i=0; i<purchases.size()-1;i++)
   if(purchases.get(i).equals(purchases.get(i+1)))
     return true;
-  return false;}
+  return false;
+  }
   public OnlinePurchaseManager()
   {
     purchases = new ArrayList <Gizmo>();
