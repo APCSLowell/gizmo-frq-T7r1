@@ -12,7 +12,7 @@ public class OnlinePurchaseManager
   public int countElectronicsByMaker(String maker)
   {
 int c=0;
-  for (int i:purchases)
+  for (Gizmo i:purchases)
     if(i.getMaker().equals(maker))
       if(i.isElectronic()==true)
         c++;
